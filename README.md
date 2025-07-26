@@ -79,10 +79,6 @@ yarn install
 
 3. **Set up Environment Variables**
 
-```bash
-cp .env.example .env
-```
-
 Edit `.env` with your Firebase credentials:
 
 ```env
@@ -225,29 +221,6 @@ The platform uses Firebase for:
    - Remove admin privileges
    - View admin activity
 
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-
-# Set environment variables in Vercel dashboard
-```
-
-### Netlify
-
-```bash
-# Build the project
-npm run build
-
-# Deploy dist folder to Netlify
-# Set environment variables in Netlify dashboard
-```
 
 ### Environment Variables for Production
 
@@ -278,9 +251,6 @@ npm run preview
 # Type checking
 npm run typecheck
 
-# Linting
-npm run lint
-```
 
 ### Adding New Features
 
@@ -314,37 +284,6 @@ interface Admin {
 }
 ```
 
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **Firebase Connection Issues**
-   - Check environment variables
-   - Verify Firebase project configuration
-   - Ensure Firestore rules are set correctly
-
-2. **Authentication Problems**
-   - Verify Google OAuth is enabled in Firebase
-   - Check authorized domains in Firebase Auth settings
-
-3. **Submission Not Working**
-   - Check browser console for errors
-   - Verify user is authenticated
-   - Check Firestore security rules
-
-4. **Admin Access Issues**
-   - Ensure admin document exists in Firestore
-   - Verify email matches exactly
-   - Check admin store initialization
-
-### Debug Mode
-
-Enable debug component by adding to your page:
-
-```vue
-<DebugFirebase v-if="authStore.user" />
-```
-
 ## 🤝 Contributing
 
 1. **Fork the repository**
@@ -353,48 +292,8 @@ Enable debug component by adding to your page:
 4. **Push to branch**: `git push origin feature/amazing-feature`
 5. **Open Pull Request**
 
-### Development Guidelines
-
-- Use TypeScript for type safety
-- Follow Vue 3 Composition API patterns
-- Write meaningful commit messages
-- Test features thoroughly
-- Update documentation as needed
-
-## 📝 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Vue.js Team** - For the amazing framework
-- **Nuxt Team** - For the powerful full-stack framework
-- **Firebase Team** - For the backend services
-- **TailwindCSS** - For the utility-first CSS framework
-- **Pinia Team** - For the intuitive state management
-
-## 📞 Support
-
-- **Documentation**: [Vue 3 Docs](https://vuejs.org/), [Nuxt 3 Docs](https://nuxt.com/), [Firebase Docs](https://firebase.google.com/docs)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/code-submission-platform/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/code-submission-platform/discussions)
-
 ---
 
 **Built with ❤️ using Vue 3, Nuxt 3, and Firebase**
 
 *Happy Coding! 🚀*
-```
-
-This README provides:
-
-- **Complete setup instructions** with step-by-step guidance
-- **Feature overview** for both visitors and admins
-- **Technical documentation** including project structure
-- **Deployment guides** for popular platforms
-- **Troubleshooting section** for common issues
-- **Contributing guidelines** for open source collaboration
-- **Professional formatting** with emojis and clear sections
-
-The README is comprehensive yet easy to follow, making it simple for developers to understand, set up, and contribute to your project!
-
