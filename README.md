@@ -52,7 +52,7 @@ A modern web application built with **Vue 3**, **Nuxt 3**, **Pinia**, **Firebase
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/code-submission-platform.git
+git clone https://github.com/bhumi-125/code-submission-platform.git   
 cd code-submission-platform
 ```
 
